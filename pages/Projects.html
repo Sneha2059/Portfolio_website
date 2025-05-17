@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Sneha Poudel
-        </title>
-        <link rel="stylesheet" href="/styles/styles.css">
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>
-    <body>
-        <header class="site-header">
-            <nav class="site-nav">
-                <a class="logo" href="/index.html">Sneha Poudel</a>
-                <ul class="main-menu">
-                    <li> <a href="/pages/About_me.html" class="active"> About Me </a> </li>
-                    <li><a href="/pages/Projects.html"> Projects </a> </li>
-                    <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
-                    <li><a href="/pages/Publication.html" > Publications</a> </li>
-                </ul>
-                <ul class="main-menu">
-                    <li><a href="/pages/contacts.html" > Contacts </a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main-content">
+<head>
+    <title>Sneha Poudel - Projects</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html" class="active"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </main>
-        
-        <footer>
-            <p>© 2025 Sneha Poudel | Created for you all.</p>
+    
+    <main class="main-content">
+        <div class="projects-container">
+            <h1 class="projects-title">My Projects</h1>
+                        <p class="mt-1 text-gray-400 mb-4">These are some the project I have worked on during my undergraduate studies demonstrating my expertise in various field.</p>
+
             
-        </footer>
-    </body>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="/projects/project1-details.html" class="project-card">
+                    <img src="/images/project1.jpg" alt="Smart Irrigation System" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Irrigation System</h3>
+                        <p class="project-description">
+                            An IoT-based automated irrigation system that monitors soil moisture and 
+                            optimizes water usage for agricultural fields.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <span class="project-link">View Details</span>
+                    </div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="/projects/project2-details.html" class="project-card">
+                    <img src="/images/project2.jpg" alt="Structural Analysis Software" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Structural Analysis Software</h3>
+                        <p class="project-description">
+                            A MATLAB-based tool for analyzing building structures under different load conditions,
+                            providing stress and strain visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Finite Element Analysis</span>
+                            <span class="tech-tag">Structural Engineering</span>
+                        </div>
+                        <span class="project-link">View Details</span>
+                    </div>
+                </a>
+                
+                <!-- Project 3 -->
+                <a href="/projects/project3-details.html" class="project-card">
+                    <img src="/images/project3.jpg" alt="Renewable Energy Monitoring" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Renewable Energy Monitoring System</h3>
+                        <p class="project-description">
+                            A dashboard for monitoring solar panel efficiency and energy output with
+                            real-time data visualization and predictive analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                        <span class="project-link">View Details</span>
+                    </div>
+                </a>
+                
+                <!-- Project 4 -->
+                <a href="/projects/project4-details.html" class="project-card">
+                    <img src="/images/project4.jpg" alt="Traffic Flow Optimization" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Traffic Flow Optimization Model</h3>
+                        <p class="project-description">
+                            Developed a simulation model to optimize traffic light timings in Kathmandu
+                            valley using machine learning algorithms.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Simulation</span>
+                        </div>
+                        <span class="project-link">View Details</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sneha Poudel | Created for you all.</p>
+    </footer>
+</body>
 </html>
