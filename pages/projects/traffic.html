@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Violation Detection System | Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .project-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: #333;
+            color: #f8f8f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .project-details {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #bbbbbb;
+            margin-bottom: 0.3rem;
+        }
+        
+        .detail-value {
+            color: #f8f8f8;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #444;
+        }
+        
+        .results-section, .methodology-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f8f8f8;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .mentorship-highlight {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .mentorship-title {
+            color: #4CAF50;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        
+        th {
+            background-color: #2a2a2a;
+        }
+        
+        .github-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .github-button:hover {
+            background-color: #444;
+            transform: translateY(-2px);
+        }
+        
+        .github-button::before {
+            content: "🖥️ ";
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">Traffic Light Violation Detection System</h1>
+            <p class="project-subtitle">Computer Vision Project | Developed as part of Mentorship Program</p>
+            
+            <div class="project-details">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Project Type</div>
+                        <div class="detail-value">Computer Vision Application</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">2024</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Mentor</div>
+                        <div class="detail-value">Sabina Pobrel</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Technologies</div>
+                        <div class="detail-value">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Object Detection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://github.com/Sneha2059/Traffic_light_violation_detection" class="github-button" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="mentorship-highlight">
+            <h3 class="mentorship-title">Developed Under Mentorship Program</h3>
+            <p>This project was developed as part of a structured mentorship program with Sabina Pobrel, focusing on:</p>
+            <ul>
+                <li>Goal-oriented project development</li>
+                <li>Professional growth in computer vision</li>
+                <li>Practical application of theoretical knowledge</li>
+                <li>Regular feedback and iterative improvement</li>
+            </ul>
+        </div>
+        
+        <div class="project-content">
+            <div class="main-content">
+                <img src="/images/traffic_streets_with_boxes.jpeg" alt="Traffic Violation Detection System" class="project-image">
+                
+                <div class="project-description">
+                    <p>The Traffic Light Violation Detection System is a computer vision application that automatically detects vehicles running red lights at intersections. The system processes real-time video feeds to identify violations, potentially reducing accidents and aiding traffic law enforcement.</p>
+                    
+                    <p>Developed as part of a mentorship program, this project demonstrates practical application of object detection algorithms and real-time video processing techniques.</p>
+                </div>
+                
+                <div class="methodology-section">
+                    <h2 class="section-title">System Architecture</h2>
+                    <ol>
+                        <li><strong>Video Input:</strong> Captures live feed from traffic cameras</li>
+                        <li><strong>Object Detection:</strong> Uses YOLO algorithm to detect vehicles and traffic lights</li>
+                        <li><strong>Violation Logic:</strong> Implements rules to identify red light runners</li>
+                        <li><strong>Alert Generation:</strong> Flags violations with timestamp and vehicle details</li>
+                        <li><strong>Data Logging:</strong> Stores violation records for further processing</li>
+                    </ol>
+                    
+                    <h3>Key Technical Challenges</h3>
+                    <ul>
+                        <li>Real-time processing of high-resolution video streams</li>
+                        <li>Accurate vehicle detection under various weather conditions</li>
+                        <li>Precise traffic light state recognition</li>
+                        <li>Minimizing false positives in violation detection</li>
+                    </ul>
+                </div>
+                
+                
+                <div class="mentorship-highlight">
+                    <h3 class="mentorship-title">Mentorship Program Learnings</h3>
+                    <p>Through the mentorship program, I gained valuable insights that shaped this project:</p>
+                    <ul>
+                        <li><strong>Goal Setting:</strong> Defined clear milestones for project development</li>
+                        <li><strong>Technical Guidance:</strong> Received expert advice on algorithm selection and optimization</li>
+                        <li><strong>Feedback Loops:</strong> Implemented iterative improvements based on mentor feedback</li>
+                        <li><strong>Professional Growth:</strong> Developed problem-solving and project management skills</li>
+                    </ul>
+                </div>
+                
+                <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
+            </div>
+            
+            <div class="sidebar">
+                <div class="project-details">
+                    <h3 class="section-title">Technical Stack</h3>
+                    <ul>
+                        <li><strong>Programming Language:</strong> Python</li>
+                        <li><strong>Computer Vision:</strong> OpenCV</li>
+                        <li><strong>Object Detection:</strong> YOLOv5</li>
+                        <li><strong>Video Processing:</strong> FFmpeg</li>
+                        <li><strong>Data Logging:</strong> SQLite</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Key Features</h3>
+                    <ul>
+                        <li>Real-time violation detection</li>
+                        <li>Multiple camera support</li>
+                        <li>Violation evidence recording</li>
+                        <li>Configurable sensitivity</li>
+                        <li>Exportable violation reports</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Mentorship Benefits</h3>
+                    <ul>
+                        <li>Structured project development</li>
+                        <li>Technical skill enhancement</li>
+                        <li>Professional guidance</li>
+                        <li>Accountability framework</li>
+                        <li>Career-relevant experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sneha Poudel | Created for you all.</p>
+    </footer>
+</body>
+</html>

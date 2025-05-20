@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Chatbot Project | Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .project-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: #333;
+            color: #f8f8f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .project-details {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #bbbbbb;
+            margin-bottom: 0.3rem;
+        }
+        
+        .detail-value {
+            color: #f8f8f8;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #444;
+        }
+        
+        .results-section, .methodology-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f8f8f8;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        
+        th {
+            background-color: #2a2a2a;
+        }
+        
+        tr:hover {
+            background-color: #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">AI-Powered Chatbot</h1>
+            <p class="project-subtitle">Python Chatbot Project | Natural Language Processing</p>
+            
+            <div class="project-details">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Project Type</div>
+                        <div class="detail-value">Chatbot Development</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">2024</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Repository</div>
+                        <div class="detail-value">
+                            <a href="https://github.com/Sneha2059/AI-powered-chatbot" style="color: #4CAF50;" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Technologies</div>
+                        <div class="detail-value">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GitHub Button -->
+            <a href="https://github.com/Sneha2059/AI-powered-chatbot" class="github-button" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project-content">
+            <div class="main-content">
+                <div class="project-description">
+                    <p>This project is an AI-powered chatbot implemented in Python using natural language processing techniques. The chatbot can understand user queries and respond appropriately based on its training data.</p>
+                    
+                    <p>The system uses a neural network model trained on intent patterns to classify user input and generate relevant responses. The project demonstrates fundamental NLP concepts and chatbot architecture.</p>
+                </div>
+                
+                <div class="methodology-section">
+                    <h2 class="section-title">Implementation</h2>
+                    <ol>
+                        <li><strong>Data Preparation:</strong> Created intents JSON file with patterns and responses</li>
+                        <li><strong>Text Processing:</strong> Used NLTK for tokenization, stemming, and bag-of-words representation</li>
+                        <li><strong>Model Architecture:</strong> Built a neural network classifier with TensorFlow/Keras</li>
+                        <li><strong>Training:</strong> Trained the model on the prepared intent patterns</li>
+                        <li><strong>Interface:</strong> Implemented a simple command-line interface for interaction</li>
+                    </ol>
+                </div>
+                
+                <div class="results-section">
+                    <h2 class="section-title">Project Structure</h2>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>train.py</td>
+                                <td>Script for training the chatbot model</td>
+                            </tr>
+                            <tr>
+                                <td>chat.py</td>
+                                <td>Main script to interact with the chatbot</td>
+                            </tr>
+                            <tr>
+                                <td>intents.json</td>
+                                <td>Training data with patterns and responses</td>
+                            </tr>
+                            <tr>
+                                <td>model.h5</td>
+                                <td>Saved trained model weights</td>
+                            </tr>
+                            <tr>
+                                <td>words.pkl</td>
+                                <td>Serialized vocabulary</td>
+                            </tr>
+                            <tr>
+                                <td>classes.pkl</td>
+                                <td>Serialized intent classes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Intent classification using neural networks</li>
+                        <li>Customizable training data via JSON file</li>
+                        <li>Basic natural language understanding</li>
+                        <li>Simple and modular architecture</li>
+                    </ul>
+                </div>
+                
+                <div class="conclusions-section">
+                    <h2 class="section-title">How It Works</h2>
+                    <ol>
+                        <li>User input is processed (tokenized and stemmed)</li>
+                        <li>The processed input is converted to a bag-of-words representation</li>
+                        <li>The neural network predicts the most likely intent</li>
+                        <li>A response is selected randomly from the matching intent's responses</li>
+                    </ol>
+                    
+                    <h3>Future Enhancements</h3>
+                    <ul>
+                        <li>Add more training data for better coverage</li>
+                        <li>Implement context awareness for multi-turn conversations</li>
+                        <li>Add a web interface or GUI</li>
+                        <li>Integrate with external APIs for extended functionality</li>
+                    </ul>
+                </div>
+                
+                <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
+            </div>
+            
+            <div class="sidebar">
+                <div class="project-details">
+                    <h3 class="section-title">Technical Stack</h3>
+                    <ul>
+                        <li><strong>Core Language:</strong> Python</li>
+                        <li><strong>NLP Library:</strong> NLTK</li>
+                        <li><strong>Machine Learning:</strong> TensorFlow/Keras</li>
+                        <li><strong>Data Format:</strong> JSON</li>
+                        <li><strong>Dependencies:</strong> numpy, pickle</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Key Concepts</h3>
+                    <ul>
+                        <li>Intent classification</li>
+                        <li>Text preprocessing</li>
+                        <li>Bag-of-words model</li>
+                        <li>Neural network training</li>
+                        <li>Model serialization</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">How to Run</h3>
+                    <ol>
+                        <li>Install dependencies: <code>pip install nltk tensorflow numpy</code></li>
+                        <li>Train the model: <code>python train.py</code></li>
+                        <li>Chat with the bot: <code>python chat.py</code></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sneha Poudel | Created for you all.</p>
+    </footer>
+</body>
+</html>

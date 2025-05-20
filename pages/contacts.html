@@ -1,86 +1,243 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Sneha Poudel
-        </title>
-        <link rel="stylesheet" href="/styles/style.css">
-        <link rel="stylesheet" href="/styles/styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+   
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
         
-    </head>
-
-
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        
+        .contact-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .contact-platform {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .contact-detail {
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        
+        .contact-link:hover {
+            background-color: #444;
+        }
+        
+        .contact-divider {
+            border: none;
+            height: 1px;
+            background-color: #333;
+            margin: 3rem 0;
+        }
+        
+        .contact-form {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .form-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #bbbbbb;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        @media (max-width: 600px) {
+            .contact-title {
+                font-size: 2rem;
+            }
+            
+            .contact-subtitle {
+                font-size: 1rem;
+            }
+            
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 <body>
     <header class="site-header">
         <nav class="site-nav">
             <a class="logo" href="/index.html">Sneha Poudel</a>
             <ul class="main-menu">
-                <li> <a href="/pages/About_me.html"> About Me </a> </li>
-                <li><a href="/pages/Projects.html"> Projects </a> </li>
-                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
-                <li><a href="/pages/Publication.html"> Publications </a> </li>
+                <li><a href="/pages/About_me.html">About Me</a></li>
+                <li><a href="/pages/Projects.html">Projects</a></li>
+                <li><a href="/pages/Research_Interests.html">Research Interests</a></li>
+                <li><a href="/pages/Publication.html">Publications</a></li>
             </ul>
             <ul class="main-menu">
-                <li><a href="/pages/contacts.html" class="active"> Contacts </a></li>
+                <li><a href="/pages/contacts.html" class="active">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <div class="card contact-c">
-            <h1 class="mb-0 text-center">Contact me</h1>
-            <p class="text-gray-400">You can contact me through any of the socials mentioned below.</p>
-            <div class=" flex-wrap items-center justify-center gap-4" style="margin-top:40px">
-                <a href="https://www.linkedin.com/in/snehapoudel28/" target="_blank">
-                    <div class="flex flex-row items-center gap-2 social">
-                    <div class="w-12 custom m-0 flex items-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 384H69V202.2h66.5V384zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 64 102.2 64c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V384h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V384z" fill="#fff"/>
-                         </svg>
-                    </div>
-                    <p class="custom font-bold text-white">Sneha Poudel</p>
-                    <p class="custom text-gray-400 font-semibold text-base"></p>
-                </div>
-            </a>
-            <a href="mailto:snehapoudel28@gmail.com" target="_blank">
-                <div class="flex flex-row items-center gap-2 social">
-                    <div class="w-12 custom m-0 flex items-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M64 112c-8.8.0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1.0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8.0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64h384c35.3.0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3.0-64-28.7-64-64V128z" fill="#fff">
-
-                            </path>
-                        </svg>
-                    </div>
-                    <p class="custom font-bold text-white">Email</p>
-                    <p class="custom text-gray-400 font-semibold text-base">snehapoudel28@gmail.com</p>
-                </div>
-            </a>
-            <a href="https://www.instagram.com/snehapoudel4/" target="_blank">
-                <div class="flex flex-row items-center gap-2 social">
-                    <div class="w-12 custom m-0 flex items-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M224.1 141c-63.6.0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1.0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9.0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9.0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9.0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9.0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8.0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="#fff">
-
-                            </path>
-                        </svg>
-                    </div>
-                    <p class="custom font-bold text-white">Instagram</p>
-                    <p class="custom text-gray-400 font-semibold text-base">snehapoudel4</p>
-                </div>
-            </a>
+    <main class="contact-container">
+        <div class="contact-header">
+            <h1 class="contact-title">Let's Connect</h1>
+            <p class="contact-subtitle">Feel free to reach out through any of these channels</p>
         </div>
-    </div>
-</div>
- </div>
-  </div>
+        
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 384H69V202.2h66.5V384zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 64 102.2 64c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V384h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V384z" fill="#fff"/>
+                    </svg>
+                </div>
+                <h3 class="contact-platform">LinkedIn</h3>
+                <p class="contact-detail">Connect professionally and view my work experience</p>
+                <a href="https://www.linkedin.com/in/snehapoudel28/" target="_blank" class="contact-link">Visit Profile</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M64 112c-8.8.0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1.0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8.0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64h384c35.3.0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3.0-64-28.7-64-64V128z" fill="#fff"/>
+                    </svg>
+                </div>
+                <h3 class="contact-platform">Email</h3>
+                <p class="contact-detail">For professional inquiries and collaborations</p>
+                <a href="mailto:snehapoudel28@gmail.com" class="contact-link">Send Email</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6.0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1.0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9.0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9.0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9.0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9.0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8.0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="#fff"/>
+                    </svg>
+                </div>
+                <h3 class="contact-platform">Instagram</h3>
+                <p class="contact-detail">Follow for personal updates and interests</p>
+                <a href="https://www.instagram.com/snehapoudel4/" target="_blank" class="contact-link">Follow Me</a>
+            </div>
+        </div>
+        
+        
+        
+        </div>
     </main>
+
     <footer>
         <p>© 2025 Sneha Poudel | Created for you all.</p>
-        
     </footer>
 </body>
 </html>
-
-
-
-

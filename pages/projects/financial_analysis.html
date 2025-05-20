@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analysis of Commercial Building | Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .project-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: #333;
+            color: #f8f8f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .project-details {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #bbbbbb;
+            margin-bottom: 0.3rem;
+        }
+        
+        .detail-value {
+            color: #f8f8f8;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #444;
+        }
+        
+        .results-section, .methodology-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f8f8f8;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        
+        th {
+            background-color: #333;
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #222;
+        }
+        
+        .financial-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .metric-card {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 0.5rem 0;
+        }
+        
+        .metric-label {
+            color: #bbbbbb;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">Financial Analysis of a Real Estate Commercial Building in Kathmandu</h1>
+            <p class="project-subtitle">Undergraduate Case Study | Team Project | Economic Feasibility Analysis</p>
+            
+            <div class="project-details">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Project Type</div>
+                        <div class="detail-value">Case Study Analysis</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">2023</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Institution</div>
+                        <div class="detail-value">Tribhuvan University, Institute of Engineering</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Technologies</div>
+                        <div class="detail-value">
+                            <span class="tech-tag">Financial Modeling</span>
+                            <span class="tech-tag">Monte Carlo Simulation</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Risk Analysis</span>
+                            <span class="tech-tag">Real Estate Economics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-content">
+            <div class="main-content">
+                <img src="/images/classic-tower.jpg" alt="Classic Tower, Hattiban" class="project-image">
+                
+                <div class="project-description">
+                    <p>This comprehensive case study analyzed the financial viability of investing in Classic Tower, a 167-unit commercial building in Hattiban, Kathmandu. As part of a team of four mechanical engineering students, we conducted an in-depth economic feasibility analysis from the perspective of a potential buyer, evaluating all financial aspects of the property investment.</p>
+                    
+                    <p>Our analysis integrated various economic principles, financial calculations, and real estate market dynamics to guide investment decision-making. We examined revenue streams, operational costs, mortgage financing, and conducted sophisticated risk assessment using Monte Carlo simulation to evaluate the property's investment potential under various market conditions.</p>
+                </div>
+                
+                <div class="methodology-section">
+                    <h2 class="section-title">Methodology</h2>
+                    <p>Our analysis followed a structured approach:</p>
+                    <ol>
+                        <li><strong>Data Collection:</strong> Gathered property specifics, market rates, and operating assumptions from Sams Management and other reliable sources.</li>
+                        <li><strong>Revenue Projections:</strong> Calculated Potential Gross Revenue using Triple Net Lease contracts accounting for base rent, property taxes, insurance, and maintenance costs.</li>
+                        <li><strong>Expense Analysis:</strong> Detailed all operating expenses including property management fees (5% of gross revenue), CAM charges (Rs. 5,000/unit/month), utilities, taxes, and insurance.</li>
+                        <li><strong>Financial Modeling:</strong> Developed comprehensive financial models in Excel to calculate key metrics.</li>
+                        <li><strong>Risk Assessment:</strong> Conducted Monte Carlo simulations (10,000 trials) to evaluate ROI under varying conditions.</li>
+                        <li><strong>Sensitivity Analysis:</strong> Identified key variables impacting investment returns.</li>
+                    </ol>
+                    
+                    <div class="gallery">
+                        <img src="/images/financial-model.jpg" alt="Financial Model Screenshot">
+                        <img src="/images/simulation-results.jpg" alt="Simulation Results">
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h2 class="section-title">Key Financial Metrics</h2>
+                    
+                    <div class="financial-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">8%</div>
+                            <div class="metric-label">Capitalization Rate</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">12.68%</div>
+                            <div class="metric-label">Return on Investment</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">2.12</div>
+                            <div class="metric-label">Debt Coverage Ratio</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">9.29</div>
+                            <div class="metric-label">Gross Rent Multiplier</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Income Statement Summary</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Annual Amount (NRS)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Potential Gross Revenue</td>
+                                <td>322,844,400</td>
+                            </tr>
+                            <tr>
+                                <td>Total Operating Expenses</td>
+                                <td>82,838,220</td>
+                            </tr>
+                            <tr>
+                                <td>Net Operating Income</td>
+                                <td>240,006,180</td>
+                            </tr>
+                            <tr>
+                                <td>Mortgage Payments</td>
+                                <td>113,159,261</td>
+                            </tr>
+                            <tr>
+                                <td>Net Cash Flow</td>
+                                <td>114,162,227</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="simulation-section">
+                    <h2 class="section-title">Simulation & Risk Analysis</h2>
+                    <p>We conducted extensive Monte Carlo simulations to evaluate investment risks under varying market conditions:</p>
+                    
+                    <h3>ROI Probability Distribution</h3>
+                    <ul>
+                        <li>Mean ROI: 8.29% with standard deviation of 2.28%</li>
+                        <li>Best-case scenario: 17.65% ROI</li>
+                        <li>Worst-case scenario: -0.27% ROI</li>
+                        <li>70% probability of achieving ROI > 7.06%</li>
+                    </ul>
+                    
+                    <h3>Sensitivity Analysis Findings</h3>
+                    <p>The ROI was found to be:</p>
+                    <ul>
+                        <li>76.8% sensitive to occupancy rate changes</li>
+                        <li>18.3% sensitive to lease amount variations</li>
+                        <li>Minimally affected by interest rate and CAM changes</li>
+                    </ul>
+                    
+                    <h3>10-Year Profit Forecast</h3>
+                    <ul>
+                        <li>Mean total profit: NRS 860,968,725</li>
+                        <li>Range: NRS 530,090,820 (worst) to NRS 1,209,131,618 (best)</li>
+                        <li>50% probability of profit between NRS 792,657,046 and NRS 928,334,015</li>
+                    </ul>
+                </div>
+                
+                <div class="conclusions-section">
+                    <h2 class="section-title">Conclusions & Recommendations</h2>
+                    <p>Our analysis demonstrated that Classic Tower presents a financially viable investment opportunity with:</p>
+                    <ul>
+                        <li>Strong fundamental metrics (8% Cap Rate, 12.68% ROI)</li>
+                        <li>Healthy debt coverage (DCR 2.12)</li>
+                        <li>Positive cash flow even in most downside scenarios</li>
+                    </ul>
+                    
+                    <p>Key recommendations for potential investors:</p>
+                    <ol>
+                        <li>Focus on maintaining high occupancy rates (primary ROI driver)</li>
+                        <li>Implement strategic marketing to optimize lease rates without compromising occupancy</li>
+                        <li>Consider adding IRR and comparative analysis for more comprehensive evaluation</li>
+                        <li>Establish MARR (Minimum Attractive Rate of Return) benchmarks</li>
+                    </ol>
+                </div>
+                
+                <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
+            </div>
+            
+            <div class="sidebar">
+                <div class="project-details">
+                    <h3 class="section-title">Project Highlights</h3>
+                    <ul>
+                        <li>Comprehensive financial modeling of 167-unit commercial property</li>
+                        <li>Advanced risk assessment using Monte Carlo simulation</li>
+                        <li>Detailed sensitivity analysis identifying key performance drivers</li>
+                        <li>10-year profit forecasting under variable market conditions</li>
+                        <li>Professional presentation of findings to faculty evaluators</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Key Assumptions</h3>
+                    <ul>
+                        <li>90% occupancy rate (mean 84% in simulation)</li>
+                        <li>NRS 179,000 average monthly rent per unit</li>
+                        <li>30-year mortgage at 3.5% interest</li>
+                        <li>5% property management fees</li>
+                        <li>0.6% property tax rate</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Team Members</h3>
+                    <ul>
+                        <li>Abishek Chaudhari</li>
+                        <li>Gangotri Sah</li>
+                        <li>Sameer Timsina</li>
+                        <li>Sneha Poudel</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Faculty Advisor</h3>
+                    <p>Dr. Shree Raj Shakya</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sneha Poudel | Created for you all.</p>
+    </footer>
+</body>
+</html>

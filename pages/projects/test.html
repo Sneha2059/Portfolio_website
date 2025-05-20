@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Point-GNN Builds Graphs from 3D Point Clouds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        .diagram-placeholder {
+            background-color: #eaf2f8;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .term {
+            font-weight: bold;
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h2>How Point-GNN Transforms Raw Point Clouds into Graphs</h2>
+    
+    <p>At the heart of Point-GNN is its clever way of converting messy 3D point cloud data into an organized graph structure that neural networks can understand. Here's how it works:</p>
+    
+    <div class="highlight">
+        <h3>1. Defining the Point Cloud Structure</h3>
+        <p>Each point in the cloud has two main components:</p>
+        <ul>
+            <li><span class="term">3D coordinates</span> (x,y,z position)</li>
+            <li><span class="term">State value</span> (could be laser intensity or other features about the point's surroundings)</li>
+        </ul>
+    </div>
+    
+    <div class="diagram-placeholder">
+        [Visualization: Raw point cloud with some points highlighted to show coordinates and properties]
+    </div>
+    
+    <h3>2. Building the Graph</h3>
+    <p>Point-GNN connects the dots (literally!) by:</p>
+    <ol>
+        <li>Treating each point as a <span class="term">vertex</span> in a graph</li>
+        <li>Creating <span class="term">edges</span> between points that are close to each other (within a set radius)</li>
+    </ol>
+    
+    <div class="highlight">
+        <p><strong>Technical note:</strong> This "fixed radius near-neighbors" problem is solved efficiently using spatial partitioning techniques, keeping the computation manageable even for large point clouds.</p>
+    </div>
+    
+    <h3>3. Handling Real-World Data Challenges</h3>
+    <p>Since real LiDAR scans often contain <span class="term">tens of thousands of points</span>, Point-GNN uses smart optimizations:</p>
+    
+    <div class="diagram-placeholder">
+        [Before/After diagram showing voxel downsampling]
+    </div>
+    
+    <ul>
+        <li><span class="term">Voxel downsampling:</span> Gently reduces point density while preserving important structure</li>
+        <li><span class="term">Feature preservation:</span> Even after downsampling, information from nearby raw points is encoded into each vertex using a small neural network</li>
+    </ul>
+    
+    <div class="highlight">
+        <h3>Why This Matters</h3>
+        <p>This graph construction approach gives Point-GNN three key advantages:</p>
+        <ol>
+            <li><strong>Efficiency:</strong> Works with the natural structure of point clouds instead of forcing them into artificial grids</li>
+            <li><strong>Information preservation:</strong> Maintains details from the original scan through smart feature encoding</li>
+            <li><strong>Scalability:</strong> Handles large real-world datasets without excessive computation</li>
+        </ol>
+    </div>
+    
+    <p>The resulting graph becomes the perfect input for the graph neural network to start detecting objects - which we'll cover in the next section!</p>
+</body>
+</html>

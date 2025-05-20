@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D CAD Model Classification using GNNs | Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .project-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: #333;
+            color: #f8f8f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .project-details {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #bbbbbb;
+            margin-bottom: 0.3rem;
+        }
+        
+        .detail-value {
+            color: #f8f8f8;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #444;
+        }
+        
+        .results-section, .methodology-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f8f8f8;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">3D CAD Model Classification using Graph Neural Networks</h1>
+            <p class="project-subtitle">Research project at Autolab Technologies</p>
+            
+            <div class="project-details">
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Project Type</div>
+                        <div class="detail-value">Research Internship</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">June 2024 - Present</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Organization</div>
+                        <div class="detail-value">Autolab Technologies</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Technologies</div>
+                        <div class="detail-value">
+                            <span class="tech-tag">GNNs</span>
+                            <span class="tech-tag">Deepwalk</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="project-content">
+            <div class="main-content">                
+                <div class="project-description">
+                    <p>This ongoing research project at Autolab Technologies explores the application of Graph Neural Networks (GNNs) for classifying 3D CAD models. Traditional methods for CAD model classification often rely on manual feature extraction or convolutional neural networks (CNNs) that process voxelized representations, which can be computationally expensive and lose important structural information.</p>
+                    
+                    <p>Our approach treats CAD models as graphs, where nodes represent geometric primitives (like faces, edges, or vertices) and edges represent their relationships. This graph representation preserves the rich topological and geometric information inherent in CAD designs while being more efficient to process than voxel-based methods.</p>
+                </div>
+                <div class="applications-section">
+                    <h2 class="section-title">Potential Applications</h2>
+                    <p>This research has several practical applications in engineering and manufacturing:</p>
+                    <ul>
+                        <li>Automated organization of CAD model libraries</li>
+                        <li>Quality control by detecting design anomalies</li>
+                        <li>Recommendation systems for similar parts</li>
+                        <li>Accelerated design retrieval in PLM systems</li>
+                        <li>Support for generative design workflows</li>
+                    </ul>
+                </div>
+                
+                <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
+            </div>
+            
+            <div class="sidebar">
+                <div class="project-details">
+                    <h3 class="section-title">Key Features</h3>
+                    <ul>
+                        <li>Graph-based representation preserves design intent</li>
+                        <li>Scale-invariant classification</li>
+                        <li>Handles both parametric and mesh-based CAD</li>
+                        <li>Interpretable attention weights show important features</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Challenges</h3>
+                    <ul>
+                        <li>Handling large assemblies</li>
+                        <li>Dealing with imperfect CAD geometry</li>
+                        <li>Limited labeled datasets</li>
+                        <li>Computational efficiency for real-time use</li>
+                    </ul>
+                    
+                    <h3 class="section-title" style="margin-top: 2rem;">Future Work</h3>
+                    <ul>
+                        <li>Extend to generative tasks</li>
+                        <li>Incorporate physical simulation data</li>
+                        <li>Develop multi-modal approaches</li>
+                        <li>Create benchmark datasets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sneha Poudel | Created for you all.</p>
+    </footer>
+</body>
+</html>
