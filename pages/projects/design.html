@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Projects | Sneha Poudel</title>
+    <title>Projects | Sneha Poudel</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/style.css">
     <style>
@@ -36,7 +36,20 @@
             gap: 2rem;
             margin-top: 2rem;
         }
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
         
+        .back-button:hover {
+            background-color: #444;
+        }
         .project-card {
             background-color: #1a1a1a;
             border-radius: 8px;
@@ -86,11 +99,6 @@
             font-size: 0.8rem;
         }
         
-        .project-links {
-            display: flex;
-            gap: 1rem;
-        }
-        
         .project-link {
             display: inline-block;
             padding: 0.5rem 1rem;
@@ -106,19 +114,16 @@
             background-color: #444;
         }
         
-        .back-button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 2rem;
-            transition: background-color 0.3s;
+        .category-section {
+            margin: 3rem 0 1.5rem;
         }
         
-        .back-button:hover {
-            background-color: #444;
+        .category-title {
+            font-size: 1.8rem;
+            color: #f8f8f8;
+            border-bottom: 1px solid #444;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
         
         /* Modal styles */
@@ -175,56 +180,48 @@
 
     <main class="projects-container">
         <div class="projects-header">
-            <h1 class="page-title">Design Projects</h1>
-            <p class="page-subtitle">A collection of my CAD design work</p>
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">A collection of my engineering and design work</p>
         </div>
         
-        <div class="projects-grid">
-            <!-- Project 1: Safa-tempo -->
-            <div class="project-card">
-                <img src="/images/uiux-design.jpg" alt="UI/UX Design Project" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">UI/UX Design Collection</h3>
-                    <p class="project-description">A series of user interface and user experience design concepts including mobile apps, web interfaces, and dashboard designs.</p>
-                    <div class="project-tags">
-                        <span class="tag">Figma</span>
-                        <span class="tag">Adobe XD</span>
-                        <span class="tag">Wireframing</span>
-                        <span class="tag">Prototyping</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1dAfQDS_tpgKamK8Yi9IielZFNeAqsaQZ?usp=drive_link" class="project-link" target="_blank">View Designs</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 2: Graphic Design -->
-            <div class="project-card">
-                <img src="/images/graphic-design.jpg" alt="Graphic Design Project" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Graphic Design Portfolio</h3>
-                    <p class="project-description">Various graphic design works including logos, branding materials, posters, and social media graphics.</p>
-                    <div class="project-tags">
-                        <span class="tag">Adobe Illustrator</span>
-                        <span class="tag">Photoshop</span>
-                        <span class="tag">Branding</span>
-                        <span class="tag">Print Design</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1dAfQDS_tpgKamK8Yi9IielZFNeAqsaQZ?usp=drive_link" class="project-link" target="_blank">View Portfolio</a>
+        <div class="category-section">
+            <h2 class="category-title">Mechanical Design Projects</h2>
+            <div class="projects-grid">
+                <!-- 6-DOF Robotic Arm -->
+                <div class="project-card">
+                    <img src="/images/arm_design.png" alt="6-DOF Robotic Arm" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">6-DOF Industrial Robotic Arm</h3>
+                        <p class="project-description">Design and counterbalance mechanism for efficient manufacturing with innovative torque reduction system.</p>
+                        <div class="project-tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">Mechanical Design</span>
+                            <span class="tag">Counterbalance</span>
+                        </div>
+                        <a href="/pages/projects/design_arm.html" class="project-link">View Project</a>
                     </div>
                 </div>
+                
+                <!-- Safa Tempo Redesign -->
+                <div class="project-card">
+                    <img src="/images/isometric.png" alt="Safa Tempo Redesign" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Safa Tempo Redesign</h3>
+                        <p class="project-description">Improving passenger comfort in Nepal's popular electric three-wheeler transportation.</p>
+                        <div class="project-tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">Transportation</span>
+                            <span class="tag">Ergonomics</span>
+                        </div>
+                        <a href="/pages/projects/design_tempo.html" class="project-link">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Add more mechanical projects here -->
             </div>
-            
+        </div>
+         <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
     
-        
-        <!-- Image Modal -->
-        <div id="imageModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImage">
-        </div>
-        
-        <a href="/pages/Projects.html" class="back-button">← Back to Projects</a>
     </main>
     
     <footer>

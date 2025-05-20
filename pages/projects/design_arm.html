@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-DOF Robotic Arm | Sneha Poudel</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        .project-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8f8f8;
+        }
+        
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-content {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .project-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #f8f8f8;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-text {
+            color: #bbbbbb;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-item {
+            background-color: #252525;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 1rem;
+            text-align: center;
+            color: #bbbbbb;
+            font-size: 0.9rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+        }
+        
+        .back-button:hover {
+            background-color: #444;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tag {
+            background-color: #333;
+            color: #f8f8f8;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #bbb;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .specs-table th, .specs-table td {
+            border: 1px solid #444;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        .specs-table th {
+            background-color: #333;
+            color: #f8f8f8;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="logo" href="/index.html">Sneha Poudel</a>
+            <ul class="main-menu">
+                <li> <a href="/pages/About_me.html"> About Me </a> </li>
+                <li><a href="/pages/Projects.html"> Projects </a> </li>
+                <li><a href="/pages/Research_Interests.html"> Research Interests </a> </li>
+                <li><a href="/pages/Publication.html"> Publications </a> </li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="/pages/contacts.html"> Contacts </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-container">
+        <div class="project-header">
+            <h1 class="project-title">6-DOF Industrial Robotic Arm</h1>
+            <p class="project-subtitle">Design and counterbalance mechanism for efficient manufacturing</p>
+            <div class="project-tags">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Mechanical Design</span>
+                <span class="tag">Counterbalance Mechanism</span>
+                <span class="tag">Industrial Automation</span>
+            </div>
+        </div>
+        
+        <div class="project-content">
+            <div class="project-section">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="project-text">
+                    This project involved the design of a 6-degree-of-freedom industrial robotic arm with an innovative counterbalance mechanism (CBM) to reduce actuator requirements. The arm features RPPPYR configuration (R - Roll, P - Pitch, Y - Yaw) and incorporates a spring-based counterbalance system to minimize gravitational torque on joints.
+                </p>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="/images/arm_design.png" alt="Complete 6-DOF Robotic Arm" class="gallery-image">
+                        <div class="image-caption">Complete 6-DOF Robotic Arm Assembly</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h2 class="section-title">Design Features</h2>
+                <p class="project-text">
+                    The design underwent multiple iterations to accommodate the counterbalance mechanism while maintaining manufacturability. Key features include:
+                </p>
+                <ul class="project-text" style="list-style-type: disc; padding-left: 2rem;">
+                    <li>Spring counterbalance mechanism reduces actuator torque requirements by 68-86%</li>
+                    <li>Actuators for joints 2, 3, and 4 mounted at the base to reduce gravitational torque</li>
+                    <li>Double parallelogram mechanism maintains reference planes for each joint</li>
+                    <li>Compact circular base design housing all primary components</li>
+                    <li>GT2 timing belts and 3D-printed pulleys for power transmission</li>
+                </ul>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="/images/base_design.jpg" alt="Base Assembly" class="gallery-image">
+                        <div class="image-caption">Base Assembly with Motors</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/shoulder_design.png" alt="Shoulder Assembly" class="gallery-image">
+                        <div class="image-caption">Shoulder with Counterbalance Mechanism</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h2 class="section-title">Counterbalance Mechanism</h2>
+                <p class="project-text">
+                    The counterbalance system uses springs, wires, and pulleys with a double parallelogram mechanism to maintain reference axes for each joint. This innovative approach allows each joint to independently compensate for gravitational torque without being affected by other joints' movements.
+                </p>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="/images/should_cbm.png" alt="Shoulder CBM" class="gallery-image">
+                        <div class="image-caption">Counterbalance in Shoulder Joint</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/elbow_cbm.png" alt="Elbow CBM" class="gallery-image">
+                        <div class="image-caption">Counterbalance in Elbow Joint</div>
+                    </div>
+                </div>
+                
+                <p class="project-text">
+                    The mechanism reduced required torque at joint 2 by 86.5% (from 64 kgf.cm to 8.6 kgf.cm) and at joint 3 by 68% (from 25 kgf.cm to 8 kgf.cm), enabling the use of smaller, more cost-effective actuators.
+                </p>
+            </div>
+            
+            <div class="project-section">
+                <h2 class="section-title">Technical Specifications</h2>
+                <table class="specs-table">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Degrees of Freedom</td>
+                        <td>6 (RPPPYR configuration)</td>
+                    </tr>
+                    <tr>
+                        <td>Arm Length</td>
+                        <td>635mm (base to end effector)</td>
+                    </tr>
+                    <tr>
+                        <td>Joint 2 CBM Spring Stiffness</td>
+                        <td>847 N/m</td>
+                    </tr>
+                    <tr>
+                        <td>Joint 3 CBM Spring Stiffness</td>
+                        <td>320 N/m</td>
+                    </tr>
+                    <tr>
+                        <td>Joint 4 CBM Spring Stiffness</td>
+                        <td>178.5 N/m</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Acrylic plates with 3D-printed components</td>
+                    </tr>
+                    <tr>
+                        <td>Actuators</td>
+                        <td>NEMA 23 and NEMA 17 stepper motors</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="project-section">
+                <h2 class="section-title">Component Designs</h2>
+                <p class="project-text">
+                    The robotic arm consists of several key subassemblies, each designed to accommodate the counterbalance mechanism while maintaining structural integrity:
+                </p>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="/images/wrist_design.png" alt="Wrist Assembly" class="gallery-image">
+                        <div class="image-caption">Wrist Assembly with End Effector</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/elbow_design.png" alt="Elbow Assembly" class="gallery-image">
+                        <div class="image-caption">Elbow Assembly</div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/pages/projects/design.html" class="back-button">← Back to Design Projects</a>
+        </div>
+    </main>
+
+    <!-- Modal for image zoom -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+   
+</body>
+</html>
