@@ -231,32 +231,6 @@
         <p>© 2025 Sneha Poudel | Created for you all.</p>
     </footer>
     
-    <script>
-        // Modal functionality
-        const modal = document.getElementById("imageModal");
-        const modalImg = document.getElementById("modalImage");
-        
-        // Get all project images and add click event
-        const projectImages = document.querySelectorAll(".project-image");
-        projectImages.forEach(img => {
-            img.addEventListener("click", function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-            });
-        });
-        
-        // Close modal when clicking X
-        const span = document.getElementsByClassName("close")[0];
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
-        
-        // Close modal when clicking outside image
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+
 </body>
 </html>
